@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+
+/* Navigation */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0;
+    background: #0f0f0f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Home */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    max-width: 750px;
+    animation: fadeUp 1s ease;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+}
+
+.skill-card {
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    background: #151515;
+
+    transition: 0.3s;
+}
+
+.skill-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #999;
+    line-height: 1.6;
+}
+
+
+/* Hover Effect */
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #777;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* About Section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.section-label {
+    font-size: 14px !important;
+    letter-spacing: 3px;
+    margin-bottom: 15px !important;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #aaa;
+}
+
+
+/* Project */
+
+.project-card {
+    max-width: 500px;
+    padding: 25px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #333;
+}
